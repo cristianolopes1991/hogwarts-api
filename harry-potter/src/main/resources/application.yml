@@ -1,0 +1,24 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: hogwarts-service
+  config:
+    import: "optional:configserver:"
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  jmx:
+    enabled: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/hogwarts?allowPublicKeyRetrieval=true&sslMode=DISABLED
+    username: root
+    password: Babusk@2021
+
+
+apikey: 479bd5d7-e03d-4cbf-b253-7115e7b96f7b
